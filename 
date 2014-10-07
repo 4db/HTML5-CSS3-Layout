@@ -1,0 +1,211 @@
+commit 327dbc118d99d5fdd6bbea7068f2ab499405d226
+Author: alexsdbk <alexs.dbk@gmail.com>
+Date:   Mon Oct 6 16:44:52 2014 -0700
+
+    Add style, html code, img
+
+diff --git a/css/style.css b/css/style.css
+new file mode 100644
+index 0000000..a453950
+--- /dev/null
++++ b/css/style.css
+@@ -0,0 +1,217 @@
++*{
++	right: 0px;
++	left: 0px;
++}
++
++body {
++	margin: 0;
++	vertical-align: baseline;
++}
++
++a {
++	text-decoration: none;
++	color: rgb(102, 102, 102);
++
++	/*slowdown*/
++	transition: 0.5s;
++	-webkit-transition: 0.5s;
++	-moz-transition: 0.5s;
++}
++a:hover{
++	color:rgb(87, 255, 202);
++}
++
++ol, ul {
++	margin: 0;
++	padding: 0;
++	list-style: none outside none;
++}
++
++.content {
++	max-width: 1600px;
++	min-width: 1000px;
++	margin: auto;
++	text-align: center;
++	position: relative;
++}
++
++header {
++	position: absolute;
++	height: 70px;
++	background-image: linear-gradient(#ffffff, #f8f8f8);
++}
++
++	logo{
++		text-decoration: none;
++		font: 11px/11px Kozuka Gothic Pr6N, sans-serif;
++		text-align: left;
++		color: rgb(51, 51, 51);
++		text-transform: uppercase;
++		position: absolute;
++		left: 127px;
++		right: 700px;
++		margin-left:0; 
++		margin-right:auto;
++		top: 15%;
++		vertical-align: baseline;
++	}
++
++	nav ul {
++		width: 500px;
++		left:700px;
++		right: 1200px;
++		margin-left:auto; 
++		margin-right:0;
++	}
++	nav li {
++		display: inline-block;
++		padding-top:3px;
++	}
++
++	nav a{
++		display: inline-block;
++		padding-top: 15px;
++		padding-right: 47px;
++		font: 11px/11px Kozuka Gothic Pr6N, sans-serif;
++		font-weight: bold;
++		color: rgb(102, 102, 102);
++		text-transform: uppercase;
++		line-height: 2.444;
++	}
++
++hero {
++	background: url(../images/hero.png) no-repeat fixed center center;
++	background-size: cover;
++	position: absolute;
++	overflow: hidden;
++	text-align: center;
++	opacity: 0.7;
++	top: 68px;
++	height: 470px;
++}
++
++	.hero-h2 {
++		white-space:pre-line;
++		display: inline-block;
++		color: rgb(255, 255, 255);
++		font: 55px/45px	Georgia, sans-serif;
++		line-height: 1.5;
++		margin: 0;
++		padding: 0;
++		left: 202px;
++		width: 712px;
++		height: 195px;
++	}
++
++	.button-hero {
++		font-size: 24px;
++		font-family: Georgia;
++		color: rgb(255, 255, 255);
++		background-color: rgb(0, 0, 0);
++		line-height: 3.5;
++		width: 215px;
++		height: 80px;
++		position: absolute;
++		bottom: 0;
++		margin: 0px auto;
++	}
++	.button-hero:hover{
++		background-color: rgb(87, 255, 202);
++		-webkit-transition: 2s;
++		-moz-transition: 2s;
++		transition: 2s;
++	}
++
++ourprojects {
++	height: 595px;
++	top: 530px;
++	position: absolute;
++	overflow: hidden;
++}
++
++	.tittle-projects-h6 {
++		font: 14px/14px	Lato;
++		font-weight: normal;
++		color: rgb(102, 102, 102);
++		text-transform: uppercase;
++		text-align: center;
++		padding: 15px;
++	}
++
++	.our-projects ul li {
++		display: inline-block;
++	}
++	.our-projects ul li img {
++		border-radius: 50%;
++	}
++
++	.our-projects ul li .our-projects-h4 {
++		font: 21px/21px	Lato;
++		color: rgb(102, 102, 102);
++		text-transform: uppercase;
++		line-height: 1;
++		text-align: center;
++	}
++	.our-projects ul li .our-projects-h5 {
++		font: 13px/13px	Georgia;
++		color: rgb(102, 102, 102);
++		line-height: 1.615;
++		white-space:pre-line;
++		margin-top: -30px;
++	}
++	.our-projects ul li .our-projects-h4,.our-projects-h5,img {
++		margin-right: 20px;
++		width:300px;
++	}
++
++	aboutus {
++		background-color: rgb(87, 255, 202);
++		opacity: 0.6;
++		position: absolute;
++		top: 1133px;
++		height: 560px;
++		text-align: center;
++	}
++	aboutus .tittle-projects-h6{
++		color: #000000;
++	}
++
++	.aboutus-h3{
++		font: 42px/42px	Lato;
++		font-weight: normal;
++		white-space:pre-line;
++		color: #000000;
++		text-transform: uppercase;
++		line-height: 1;
++		margin-top: -70px;
++	}
++
++	aboutus p {
++		font: 18px/18px	Georgia sans-serif;
++		color: #000000;;
++	}
++
++footer{
++	background-color: rgb(102, 102, 102);
++	position: absolute;
++	top: 1693px;
++	height: 307px;
++	-moz-transform: matrix( 1,0,0,0.99,0,0);
